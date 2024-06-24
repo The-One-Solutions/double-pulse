@@ -1,0 +1,95 @@
+.pagecover{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.pagecover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.aboutcontent{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.aboutpagecontentholder{
+    width: 90%;
+    background: #D9F1FF;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 3%;
+}
+.aboutpagecontentholder p{
+    width: 90%;
+    margin: 2% 0% 2% 0%;
+}
+.missionvisionholder{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.mission{
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 3%;
+    background: #D9F1FF;
+}
+.mission h3{
+    width: 100%;
+    margin: 2% 0% 2% 0%;
+    text-align: center;
+    color: #264067;
+}
+.mission p{
+    width: 90%;
+    margin: 2% 0% 2% 0%;
+}
+.facilityimgholder{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.facilityimgholder img{
+    width: 45%;
+    margin: 1%;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.50);
+}
+
+@media (max-width: 500px){
+    .missionvisionholder{
+        width: 90%;
+        display: grid;
+        justify-items: center;
+    }
+    .mission{
+        width: 100%;
+    }
+    .facilityimgholder{
+        flex-direction: column;
+    }
+    .facilityimgholder img{
+        width: 90%;
+        margin: 2%;
+    }
+}
+@media (min-width: 865px) and (max-width: 1280px){
+    .mission{
+        width: 50%;
+    }
+}
+@media (min-width: 865px) and (max-width: 1280px){
+    .mission{
+        width: 50%;
+    }
+}
+
+
