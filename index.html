@@ -13,29 +13,48 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Double Pulse - Home</title>
-    <script>
-        // JavaScript code for smooth scrolling
-        document.addEventListener('DOMContentLoaded', function () {
-            var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
-            for (var i = 0; i < smoothScrollTriggers.length; i++) {
-                smoothScrollTriggers[i].addEventListener('click', function (e) {
-                    e.preventDefault();
-                    var href = this.getAttribute('href');
-                    var targetElement = document.getElementById(href.replace('#', ''));
-                    var rect = targetElement.getBoundingClientRect();
-                    var offset = window.pageYOffset;
-                    var targetPosition = rect.top + offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                });
-            }
-        });
-    </script>
+    
 </head>
 
 <body>
+    <nav id="navbar">
+        <navbar class="navbar-section">
+
+            <div class="logo">
+                <a href="index.html">
+                   
+                    <img src="images/doublepulse-logo-01.png" alt="Double Pulse">
+                </a>
+            </div>
+
+            <li class="menu-icon">
+                <img src="icons/open-menu-iocn.svg" onclick="toggleFunction()" alt="menu-icon">
+            </li>
+            <ul class="nav-container" id="topnav">
+                <li class="menu-close-icon">
+                    <img src="icons/close-menu-icon.svg" onclick="toggleFunction()" alt="menu-icon">
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="#product">Products</a>
+                </li>
+                <li>
+                    <a href="#footer">Contact Us</a>
+                </li>
+                <li>
+                    <button class="enquirybutton"><a href="#footer">Enquiry</a></button>
+                </li>
+
+                <!-- <li><a href="#why-us"></a></li> -->
+                <!-- <li><a href="#contact">Locations</a></li> -->
+            </ul>
+        </navbar>
+    </nav>
     <section class="homescreen" id="home">
         <div class="carousel-container">
             <div class="carousel-inner">
@@ -59,21 +78,6 @@
         <button class="carousel-control prev" onclick="prevSlide()">&#8249;</button>
         <button class="carousel-control next" onclick="nextSlide()">&#8250;</button>
 
-        <nav>
-            <a href=""><img class="navlogo" src="images/doublepulse-logo-01.png" alt="doublepulse-logo"></a>
-            <div class="navLinks" id="navLinks">
-                <img src="icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#product">Products</a></li>
-                    <!-- <li><a href="#testimonial">Testimonials</a></li> -->
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a class="enquirybutton" href="#footer">Enquiry</a></li>
-                </ul>
-            </div>
-            <img src="icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
-        </nav>
     </section>
 
     <section class="about" id="about">
@@ -100,7 +104,7 @@
         <div class="productsholder">
 
             <div class="productcontentholder">
-                <a href="./productsdetail.html">
+                <a href="./stylets.html">
                 <div class="productimgholder">
                     <img src="./images/istockphoto-1218171262-612x612.jpg" alt="Architecture.webp">
                 </div>
@@ -238,7 +242,7 @@
             </div>
         </div>
     </section>
-    <section class="facility-section">
+    <!-- <section class="facility-section">
         <div class="gallery-container">
             <h1 class="sectionheading">Facilities</h1>
             <div class="gallery">
@@ -254,7 +258,7 @@
                 <div class="caption" id="caption"></div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- <section class="testimonials">
         <h2 class="sectionheading">Testimonials</h2>
         <div class="slider-container">
@@ -296,9 +300,9 @@
                     Solution</b></a></p>
     </div>
 
-    <script src="js/testimonial.js"></script>
+    <!-- <script src="js/testimonial.js"></script> -->
     <script src="js/carousel.js"></script>
-    <!-- <script src="js/nav.js"></script> -->
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

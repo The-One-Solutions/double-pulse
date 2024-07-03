@@ -17,27 +17,49 @@
 </head>
 
 <body>
+
+    <nav id="navbar">
+        <navbar class="navbar-section">
+
+            <div class="logo">
+                <a href="index.html">
+                   
+                    <img src="images/doublepulse-logo-01.png" alt="Double Pulse">
+                </a>
+            </div>
+
+            <li class="menu-icon">
+                <img src="icons/open-menu-iocn.svg" onclick="toggleFunction()" alt="menu-icon">
+            </li>
+            <ul class="nav-container" id="topnav">
+                <li class="menu-close-icon">
+                    <img src="icons/close-menu-icon.svg" onclick="toggleFunction()" alt="menu-icon">
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="./index.html#product">Products</a>
+                </li>
+                <li>
+                    <a href="#footer">Contact Us</a>
+                </li>
+                <li>
+                    <button class="enquirybutton"><a href="#footer">Enquiry</a></button>
+                </li>
+
+                <!-- <li><a href="#why-us"></a></li> -->
+                <!-- <li><a href="#contact">Locations</a></li> -->
+            </ul>
+        </navbar>
+    </nav>
     <section class="homescreen">
         <div class="pagecover">
             <img src="images/view-anatomic-heart-model-educational-purpose-with-magnifying-glass.jpg" alt="">
         </div>
-
-        <nav>
-            <a href=""><img class="navlogo" src="images/doublepulse-logo-01.png" alt="doublepulse-logo"></a>
-            <div class="navLinks" id="navLinks">
-                <img src="icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#ourservices">Products</a></li>
-                    <li><a href="#sector">Library</a></li>
-                    <li><a href="#testimonial">Testimonials</a></li>
-                    <li><a href="#footer">Contact Us</a></li>
-                    <li><a class="enquirybutton" href="#footer">Enquiry</a></li>
-                </ul>
-            </div>
-            <img src="icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
-        </nav>
     </section>
 
     <section class="aboutcontent">
@@ -75,11 +97,11 @@
                 </p>
             </div>
         </div>
-        <h2 class="sectionheading">Facility</h2>
+        <!-- <h2 class="sectionheading">Facility</h2>
         <div class="facilityimgholder">
             <img src="./images/istockphoto-1337210627-612x612.jpg" alt="">
             <img src="./images/male-doctor-hands-measuring-tension-patient.jpg" alt="">
-        </div>
+        </div> -->
         <!-- <div class="facilityimgholder">
             <img src="./images/istockphoto-1337210627-612x612.jpg" alt="">
         </div> -->
@@ -116,9 +138,9 @@
 
 
 
-    <script src="js/carousel.js"></script>
+    <!-- <script src="js/carousel.js"></script> -->
     <script src="js/nav.js"></script>
-    <script src="js/testimonial.js"></script>
+    <!-- <script src="js/testimonial.js"></script> -->
 </body>
 
 </html>
