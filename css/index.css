@@ -1038,8 +1038,8 @@ section.product{
     width: calc(33.333% - 30px);
 }
 .service-number{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-color: #D9F1FF;
     color: var(--orange-light);
     font-size: 2rem;
@@ -1049,6 +1049,11 @@ section.product{
     justify-content: center;
     border-radius: 50%;
     margin-inline: auto;
+}
+.service-number img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
 }
 .service-name{
     margin-block: 20px;
